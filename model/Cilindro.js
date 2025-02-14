@@ -11,6 +11,6 @@ export default class Cilindro {
     }
 
     calcularAreaTotal() {
-        return (2 * Math.PI * this.raio * this.altura) + (2 * Math.PI * this.raio**2)
+        return (2 * Math.PI * this.raio * this.altura) + (2 * Math.PI * this.raio ** 2)
     }
 }

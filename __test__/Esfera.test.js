@@ -1,18 +1,18 @@
 import Esfera from "../model/Esfera.js"
 
-describe ("teste de classe Esfera", ()=>{
-    test("Testando o Volume da Esfera", ()=>{
+describe("teste de classe Esfera", () => {
+    test("Testando o Volume da Esfera", () => {
         const raio = 11
         const esfera = new Esfera(raio)
-        const VolumeEsperado  = 5575.28
+        const volumeEsperado = (4 * Math.PI * raio ** 3) / 3
 
-        expect(esfera.CalcularVolume()).toBeCloseTo(VolumeEsperado,2)
+        expect(esfera.calcularVolume()).toBeCloseTo(volumeEsperado, 2)
     })
-    test("Testando o cálculo da área total", ()=>{
+    test("Testando o cálculo da área total", () => {
         const raio = 11
         const esfera = new Esfera(raio)
-        const AreaTotalEsperada = 1519.76
+        const areaTotalEsperada = 4 * Math.PI * raio ** 2
 
-        expect(esfera.CalcularAreaTotal()).toBeCloseTo(AreaTotalEsperada,2)
+        expect(esfera.calcularAreaTotal()).toBeCloseTo(areaTotalEsperada, 2)
     })
 })
