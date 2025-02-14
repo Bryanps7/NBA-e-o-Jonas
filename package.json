@@ -4,8 +4,9 @@
   "description": "Sólidos Geometricos",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "jest"
   },
+  "type": "module",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/Bryanps7/NBA-e-o-Jonas.git"
