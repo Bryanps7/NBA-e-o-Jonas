@@ -1,12 +1,12 @@
 export default class Esfera{
-    constructor(raio, diametro){
+    constructor(raio){
         this.raio = raio
     }
-    CalcularVolume(){
+    calcularVolume(){
         return (4 * Math.PI * this.raio * this.raio * this.raio) / 3
     }
 
-    CalcularAreaTotal(){
+    calcularAreaTotal(){
         return 4 * Math.PI * this.raio * this.raio
     }
 }

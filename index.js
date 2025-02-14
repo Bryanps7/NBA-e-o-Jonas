@@ -1,22 +1,38 @@
 import Cubo from "./model/Cubo.js"
+import Esfera from "./model/Esfera.js"
+import Cilindro from "./model/Cilindro.js"
 
-let aresta1 = 7
+let aresta = 7
 
-const cubo1 = new Cubo(aresta1)
+const cubo = new Cubo(aresta)
 
-let areaTotal = cubo1.calcularAreaTotal()
-let volume = cubo1.calcularVolume()
+let volumeCub = cubo.calcularVolume()
+let areaTotalCub = cubo.calcularAreaTotal()
 
-console.log("A area total do cubo 1 é:", areaTotal)
-console.log("o volume do cubo 1 é:", volume)
+console.log("> Volume Cubo: ",volumeCub)
+console.log("> Área Total Cubo: ",areaTotalCub)
 
 console.log("======================")
 
-let aresta2 = 8
-const cubo2 = new Cubo(aresta2)
+let raio = 4
 
-areaTotal = cubo2.calcularAreaTotal()
-volume = cubo2.calcularVolume()
+const esfera = new Esfera(raio)
 
-console.log("A area total do cubo 1 é:", areaTotal)
-console.log("o volume do cubo 1 é:", volume)
+let volumeEsf = esfera.calcularVolume()
+let areaTotalEsf = esfera.calcularAreaTotal()
+
+console.log('> Volume Esfera: ',volumeEsf.toFixed(2));
+console.log('> Área Total Esfera: ',areaTotalEsf.toFixed(2));
+
+console.log("======================")
+
+let raioC = 4
+let altura = 5
+
+const cilindro = new Cilindro(raioC, altura)
+
+let volumeCil = cilindro.calcularVolume()
+let areaTotalCil = cilindro.calcularAreaTotal()
+
+console.log('> Volume Cilindro: ',volumeCil.toFixed(2));
+console.log('> Área Total Cilindro: ',areaTotalCil.toFixed(2));
