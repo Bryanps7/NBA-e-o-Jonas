@@ -1,16 +1,17 @@
 // edc
 export default class Cylinder {
-    constructor (area,height){
-        this.area = area
+    constructor (raio, height){
+        this.raio = raio
         this.height = height
     }
     
     calculateVolume(){
-       return Math.PI * this.area ** 2 * this.height 
+       return Math.PI * this.raio ** 2 * this.height 
     }
 
-    calculatetotalArea(){
-        return (2 * Math.PI * this.area * this.height) + (2 * Math.PI * this.area * this.area)
+
+    calculateTotalArea(){
+        return (2 * Math.PI * this.raio * this.height) + (2 * Math.PI * this.raio * this.raio)
     }
 
 }
